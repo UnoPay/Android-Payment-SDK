@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="32dp"
+    android:orientation="vertical"
+    tools:context="com.techjini.android.paymnetlibrary.fragments.WalletSignIn">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <TextView
+        android:id="@+id/wallet_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+
+    <!--<TextView
+        android:id="@+id/std_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_detail_description"
+        android:layout_alignBottom="@+id/mobile_number_til"
+        android:text="+91"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold" />-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/std_code"
+        android:layout_below="@+id/wallet_detail_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hintTextAppearance="@style/TextInputLayout">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:text="+91"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mobile_number_til"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/wallet_detail_description"
+        android:layout_toRightOf="@+id/std_code"
+        app:hintTextAppearance="@style/TextInputLayout">
+
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/hint_mobile_number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="16dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/pay_now"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/mobile_number_til"
+        android:layout_gravity="center"
+        android:background="@drawable/action_button_background"
+        android:text="Pay Now"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+
+
+</RelativeLayout>

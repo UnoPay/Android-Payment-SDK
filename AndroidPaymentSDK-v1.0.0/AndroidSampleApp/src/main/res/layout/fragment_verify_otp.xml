@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/powered_by_unopay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.techjini.android.paymnetlibrary.views.RobotoRegularTextView
+                android:id="@+id/waitingForOtpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="@string/waiting_for_otp"
+                android:textColor="@android:color/black" />
+
+            <com.techjini.android.paymnetlibrary.views.progressbar.SmoothProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/GNowProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/waitingForOtpText"
+                android:indeterminate="true" />
+
+            <com.techjini.android.paymnetlibrary.views.RobotoRegularTextView
+                android:id="@+id/wallet_otp_sent_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress_bar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/we_have_sent_otp"
+                android:textSize="14dp" />
+
+
+            <com.techjini.android.paymnetlibrary.views.RobotoRegularTextView
+                android:id="@+id/otp_sent_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_otp_sent_to"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:text="+91 9036453434"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+
+            <RelativeLayout
+                android:id="@+id/otp_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/otp_sent_mobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/otp_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:hint="@string/otp_text"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+            <!--<include layout="@layout/loading_view"></include>-->
+
+            <com.techjini.android.paymnetlibrary.views.RobotoRegularTextView
+                android:id="@+id/done_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/otp_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_backgnd"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <com.techjini.android.paymnetlibrary.views.RobotoRegularTextView
+                android:id="@+id/resend_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/done_button"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/resend_otp"
+                android:textColor="@color/unopayColorPrimary"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

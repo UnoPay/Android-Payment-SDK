@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">IntegrationKit</string>
+    <string name="install_unopay">Install UnoPay</string>
+    <string name="apikey_order_null">Error! either APIKEY or ORDER_ID is null</string>
+    <string name="notsupported">Error! API less than 15 is not supported</string>
+    <string name="action_payment">ACTION_UNOPAY_PAYMENT</string>
+    <string name="loves_unopay">loves UnoPay.</string>
+    <string name="install_to_pay">Install to make payment</string>
+    <string name="install">INSTALL</string>
+    <string name="update">UPDATE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="unopay_name">UNOPAY</string>
+    <string name="rupee_symbol">\u20b9</string>
+    <string name="use_unopay_for_payment">Simple steps to configure for one click payment.Pay by Wallets,Cards or Netbanking</string>
+    <string name="user_cancelled">User canceled the app installation</string>
+    <string name="user_cancelled_transaction">User canceled the transaction</string>
+    <string name="unopay_update_required">Your using older UnoPay App\\nUpdate is required to make payment</string>
+    <string name="please_provide_app_name">Please provide your app name</string>
+    <string name="please_provide_merchant_id">Please provide merchant id</string>
+    <string name="pass_hash_client_key">Please pass hash or client key. We recomend you to pass hash which is generated at your server</string>
+    <string name="please_give_amount">Please enter amount more than 0</string>
+    <string name="please_give_merchant_sdk_key">Please give merchant sdk key. Ask UnoPay to provide you a key</string>
+    <string name="please_give_partner_id">Please provide partner. Ask UnoPay to provide you a key</string>
+    <string name="please_provide_payment_params">Please provide payment params</string>
+    <string name="fetching_wallets">Fetching Wallets...</string>
+    <string name="connection_timeout">Connection timed out. Please check if you have stable internet connection</string>
+    <string name="connection_issue">Please check your internet connection</string>
+    <string name="unopay_benifits"> Want to pay using Cards/Netbanking? <a href='market://details?id=in.unopay.android.buyer.prod'>Click here to download UnoPay app</a>
+    </string>
+
+    <string name="not_support_google_play">This device is not supported for required Goole Play Services</string>
+
+    <string name="google_play_error_message">This device is not supported for required Google Play Services</string>
+    <string name="google_play_service_required">Unopay won\\\'t run without Google Play services, which are missing from your phone.</string>
+    <string name="google_play_service_update_required">You are using older version of google play service. Please update to serve you better</string>
+    <string name="enable_google_play_service">Google Play Service is disabled!\nPlease enable to server you better</string>
+    <string name="google_play_service_invalid_account">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="google_play_service_data_connection_required">A data connection is required to connect to Google Play services.</string>
+    <string name="google_play_service_not_supported">UnoPay relies on Google Play services, which is not supported by your device. Contact the manufacturer for assistance.</string>
+    <string name="google_play_api_unavailable">UnoPay requires one or more Google Play services that are not currently available. Please contact the developer for assistance.</string>
+    <string name="google_play_service_error_signin">Error signing in the specified account. Please choose a different account.</string>
+    <string name="google_play_service_updating">won\\\'t run without Google Play services, which are currently updating.Please try after some time</string>
+    <string name="google_play_service_update_android_wear_app">UnoPay won\\\'t run unless you update the Android Wear app.</string>
+    <string name="google_play_error">Google Play Services Error</string>
+
+    <string name="sms_permission_not_available">Please enable "SMS" permission under Permission section,to auto read OTP to ease with the payment flow.Else you have to manually enter otp and proceed</string>
+    <string name="read_phone_state_permission_not_available">Please enable "Phone" permission under Permission section, as it is required to get the device ID to keep sending you the offers.</string>
+    <string name="location_permission_not_available">Please enable \"Location\" permission under Permission section, as it is required us to keep sending you the location based offers.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="add_wallet_description">Please enter %s details</string>
+    <string name="hint_mobile_number">Please enter mobile number</string>
+    <string name="otp_text">Please Enter OTP</string>
+    <string name="modify_number">Modify Number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="waiting_for_otp">Waiting for OTP</string>
+    <string name="we_have_sent_otp">We have sent an OTP to</string>
+    <string name="done">Done</string>
+    <string name="loading">Loading..</string>
+    <string name="label_error">Error</string>
+    <string name="default_network_error_message">Oops! Something went wrong.Please try again later.</string>
+    <string name="no_internet">Please check your internet connection</string>
+    <string name="button_ok">Ok</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="offline_otp_start_with">We need you to authenticate your UnoPay</string>
+    <string name="enter_otp">Please enter OTP</string>
+    <string name="enter_valid_otp">Please enter a valid OTP</string>
+    <string name="transaction_failure">Sorry! There was an error while transaction.Please contact support</string>
+    <string name="unopay_five_not_three_error">UnoPay server is under maintenance</string>
+    <string name="unopay_five_x_error">UnoPay has encountered an unexpected problem! Please try later.</string>
+    <string name="unopay_older_version">You are having an older version of UnoPay app. To make use of more benifits and offers kindly update the app.</string>
+</resources>

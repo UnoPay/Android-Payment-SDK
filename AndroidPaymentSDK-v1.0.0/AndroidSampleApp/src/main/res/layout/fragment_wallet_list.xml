@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.WalletList">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/default_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="26dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/select_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Please select wallet to pay"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+            <View
+                android:id="@+id/divider"
+                android:layout_below="@+id/select_wallet"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="@color/top_divider" />
+
+
+            <com.techjini.android.paymnetlibrary.views.RecyclerListView
+                android:id="@+id/wallet_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/divider"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+            </com.techjini.android.paymnetlibrary.views.RecyclerListView>
+
+            <include layout="@layout/powered_by_unopay"></include>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/loading_background"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/fetching_wallets"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

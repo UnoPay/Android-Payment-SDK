@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.techjini.android.unopaypaymentsdk.MainActivity">
+
+    <!-- <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <EditText
+             android:id="@+id/order_id"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="Order Id"/>
+     </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <EditText
+             android:id="@+id/app_name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="App Name"/>
+     </android.support.design.widget.TextInputLayout>
+
+ -->
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:maxLength="10"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <EditText
+             android:id="@+id/merchant_sdk_key"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="SDK Key"/>
+     </android.support.design.widget.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/pay_using_unopay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Pay Using Unopay" />
+</LinearLayout>

@@ -1,4 +1,3 @@
-# paymentSDKs
 UnoPay Payment SDK v1.0.0
 =========================
 
